@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!--- This is used to provide access control and related configuration for the infocube documentation -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource id="Magento_Backend::admin">
+                <resource id="Infocube_Admindoc::infocube" title="Infocube" sortOrder="12">
+                    <resource id="Infocube_Admindoc::documentation" title="Infocube Documentation" sortOrder="10"/>
+                </resource>
+                <resource id="Magento_Backend::stores">
+                    <resource id="Magento_Backend::stores_settings">
+                        <resource id="Magento_Config::config">
+                            <resource id="Infocube_Admindoc::config" title="Infocube Configuration"/>
+                        </resource>
+                    </resource>
+                </resource>
+            </resource>
+        </resources>
+    </acl>
+</config>

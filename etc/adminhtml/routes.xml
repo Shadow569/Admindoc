@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<!-- This file configures the main routes for this application and associates the appropriate front controller for the admin panel controllers -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <router id="admin">
+        <route id="infocube_docs" frontName="magic_cube">
+            <module name="Infocube_Admindoc"/>
+        </route>
+    </router>
+</config>

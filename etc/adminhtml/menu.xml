@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<!--- This file adds one more icon into the admin panel sidebar and adds a new menu specifically for this module -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Infocube_Admindoc::infocube" title="Infocube" module="Infocube_Admindoc" sortOrder="12" resource="Infocube_Admindoc::infocube"/>
+        <add id="Infocube_Admindoc::documentaion" title="Documentation" module="Infocube_Admindoc" sortOrder="10" action="magic_cube" resource="Infocube_Admindoc::documentaion" parent="Infocube_Admindoc::infocube"/>
+    </menu>
+</config>
